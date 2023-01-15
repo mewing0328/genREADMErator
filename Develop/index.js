@@ -11,7 +11,37 @@ const promptUser = () => {
             name: 'title',
             message: 'What is the title of your project?',
             validate: function valid(name) { return name ? true : 'Project title required';}
-        },        
+        },     
+        {
+            type: 'input',
+            name: 'description',
+            message: 'What is a description for your project.',
+            validate: function valid(name) { return name ? true : 'Project description required';}
+        },     
+        {
+            type: 'input',
+            name: 'installation',
+            message: 'What are the installation instructions for your project.',
+            validate: function valid(name) { return name ? true : 'Installation instructions required';}
+        },  
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'What is the usage information for your project.',
+            validate: function valid(name) { return name ? true : 'Usage information required';}
+        },  
+        {
+            type: 'input',
+            name: 'contribution',
+            message: 'What are the contributing guidelines for your project.',
+            validate: function valid(name) { return name ? true : 'Contribution guidelines required';}
+        }, 
+        {
+            type: 'input',
+            name: 'test',
+            message: 'What are test instructions for your project.',
+            validate: function valid(name) { return name ? true : 'Test instructions required';}
+        },
         {
             type: 'input',
             name: 'gitHub',
@@ -35,11 +65,13 @@ const promptUser = () => {
 };
 
 // Template for the README with sections for the inputs
-const generateREADME = ({ title, gitHub, license, email }) =>
+const generateREADME = ({ title, description, installation, usage, contribution, test, gitHub, email, license }) =>
 `# ${title} 
 [![${license}}](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})
 
 ## Description 
+${description}
+
 ## Table of Contents 
 [1. Installation](#installation) \n
 [2. Usage](#usage) \n
@@ -51,14 +83,22 @@ const generateREADME = ({ title, gitHub, license, email }) =>
 <br></br>
 
 ## Installation 
+${installation}
+
 ## Usage 
+${usage}
+
 ## License 
 ${title} project is covered by ${license} license. 
 \n To view the most current and full license description in opensource.org, click on the license name below.  
 \n [![${license}}](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})
 
 ## Contributing 
+${contribution}
+
 ## Tests 
+${test}
+
 ## Questions
 Interested in seeing my other work? \n 
 Check out my GitHub account: [${gitHub}](https://github.com/${gitHub}) \n

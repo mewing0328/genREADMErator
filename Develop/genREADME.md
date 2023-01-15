@@ -1,8 +1,9 @@
-
-# MaSandra 
-[![Apache2.0}](https://img.shields.io/badge/License-Apache2.0-blue.svg)](https://opensource.org/licenses/Apache2.0)
+# Sandy 
+[![MIT}](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Description 
+Test
+
 ## Table of Contents 
 [1. Installation](#installation) 
 
@@ -20,24 +21,27 @@
 <br></br>
 
 ## Installation 
+Test
+
 ## Usage 
+Test
+
 ## License 
-MaSandra project is covered by Apache2.0 license. 
+Sandy project is covered by MIT license. 
 
  To view the most current and full license description in opensource.org, click on the license name below.  
 
- [![Apache2.0}](https://img.shields.io/badge/License-Apache2.0-blue.svg)](https://opensource.org/licenses/Apache2.0)
+ [![MIT}](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Contributing 
+Test
+
 ## Tests 
+Test
+
 ## Questions
-
-
 Interested in seeing my other work? 
  
-Check out my GitHub account: [mewing0328](https://github.com/mewing0328) 
+Check out my GitHub account: [Test](https://github.com/Test) 
 
-If you have additional questions, please reach me at [masandraewing@gmail.com](mailto:masandraewing@gmail.com). 
-
-## Credits
-## Demos
+If you have additional questions, please reach me at [Test](mailto:Test).
