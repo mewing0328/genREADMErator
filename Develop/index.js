@@ -1,11 +1,42 @@
-// TODO: Include packages needed for this application
+//Packages needed for this application
 const inquirer = require('inquirer')
-const fs = require('fs');
 
-// TODO: Template for the README with sections for the inputs
-const generateREADME = ({ title, year, gitHub, license, email }) =>
-`
-# ${title} 
+const {writeFile} = require('fs').promises;
+
+// Array of questions for user input & validation functions
+const promptUser = () => {
+    return inquirer.prompt([   
+        {
+            type: 'input',
+            name: 'title',
+            message: 'What is the title of your project?',
+            validate: function valid(name) { return name ? true : 'Project title required';}
+        },        
+        {
+            type: 'input',
+            name: 'gitHub',
+            message: 'What is your GitHub username?',
+            validate: function valid(name) { return name ? true : 'GitHub username required';}
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is your email address?',
+            validate: function valid(name) { return name ? true : 'Email address required';}
+        },
+        {
+            type: 'list',
+            name: 'license',
+            message: 'What license do you need for your project?',
+            choices: ['Apache2.0','IPA', 'MIT', 'NASA1.3', 'Unlicense'],
+            validate: function valid(name) { return name ? true : 'License required';}
+        },
+    ])
+};
+
+// Template for the README with sections for the inputs
+const generateREADME = ({ title, gitHub, license, email }) =>
+`# ${title} 
 [![${license}}](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})
 
 ## Description 
@@ -29,59 +60,17 @@ ${title} project is covered by ${license} license.
 ## Contributing 
 ## Tests 
 ## Questions
-
-
 Interested in seeing my other work? \n 
 Check out my GitHub account: [${gitHub}](https://github.com/${gitHub}) \n
-If you have additional questions, please reach me at [${email}](mailto:${email}). 
-
-## Credits
-## Demos
-`
+If you have additional questions, please reach me at [${email}](mailto:${email}).`
 ;
 
-// TODO: Create an array of questions for user input
-// const questions = [];
-inquirer
-    .prompt([   
-        {
-            type: 'input',
-            name: 'title',
-            message: 'What is the title of your project?'
-        },        
-        {
-            type: 'input',
-            name: 'gitHub',
-            message: 'What is your GitHub username?'
-        },
-        {
-            type: 'input',
-            name: 'email',
-            message: 'What is your email address?'
-        },
-        {
-            type: 'list',
-            name: 'license',
-            message: 'What license do you need for your project?',
-            choices: ['Apache2.0','IPA', 'MIT', 'NASA1.3', 'Unlicense'],
-        },
-    ])
-    .then((answers) => {
+//writeFileSync as a promise
+const init = () => {
+    promptUser()
+    .then((answers) => writeFile('genREADME.md', generateREADME(answers)))
+    .then(() => console.log(`Successfully created a README.md file! \nIt is titled genREADME.md but you may change the name of the file.`))
+    .catch((err) => console.log(err));
+};
 
-        const readMeFileContent = generateREADME (answers);
-    
-        fs.writeFile('genREADME.md', readMeFileContent, (err) => 
-        err ? console.log(err) : console.log(`Successfully created a README.md file! \nIt is titled genREADME.md but you may change the name of the file.`)
-        );
-    });
-
-// DO WE NEED THESE BELOW???!!!
-
-    // TODO: Create a function to write README file
-    // function writeToFile(fileName, data) {}
-
-    // TODO: Create a function to initialize app
-    //function init() {}
-
-    // Function call to initialize app
-    //init();
+init();

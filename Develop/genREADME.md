@@ -1,6 +1,6 @@
 
-# undefined 
-[![Unlicense}](https://img.shields.io/badge/License-Unlicense-blue.svg)](https://opensource.org/licenses/Unlicense)
+# MaSandra 
+[![Apache2.0}](https://img.shields.io/badge/License-Apache2.0-blue.svg)](https://opensource.org/licenses/Apache2.0)
 
 ## Description 
 ## Table of Contents 
@@ -22,11 +22,11 @@
 ## Installation 
 ## Usage 
 ## License 
-undefined project is covered by Unlicense license. 
+MaSandra project is covered by Apache2.0 license. 
 
  To view the most current and full license description in opensource.org, click on the license name below.  
 
- [![Unlicense}](https://img.shields.io/badge/License-Unlicense-blue.svg)](https://opensource.org/licenses/Unlicense)
+ [![Apache2.0}](https://img.shields.io/badge/License-Apache2.0-blue.svg)](https://opensource.org/licenses/Apache2.0)
 
 ## Contributing 
 ## Tests 
@@ -35,9 +35,9 @@ undefined project is covered by Unlicense license.
 
 Interested in seeing my other work? 
  
-Check out my GitHub account: [undefined](https://github.com/undefined) 
+Check out my GitHub account: [mewing0328](https://github.com/mewing0328) 
 
-If you have additional questions, please reach me at [undefined](mailto:undefined). 
+If you have additional questions, please reach me at [masandraewing@gmail.com](mailto:masandraewing@gmail.com). 
 
 ## Credits
 ## Demos
