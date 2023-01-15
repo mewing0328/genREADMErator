@@ -1,4 +1,7 @@
-# Sandy 
+
+# undefined 
+[![Unlicense}](https://img.shields.io/badge/License-Unlicense-blue.svg)](https://opensource.org/licenses/Unlicense)
+
 ## Description 
 ## Table of Contents 
 [1. Installation](#installation) 
@@ -13,23 +16,28 @@
 
 [6. Questions](#questions) 
 
-[7. Credits](#questions) 
-
-[8. Demos](#questions) 
 
 <br></br>
 
 ## Installation 
 ## Usage 
 ## License 
+undefined project is covered by Unlicense license. 
+
+ To view the most current and full license description in opensource.org, click on the license name below.  
+
+ [![Unlicense}](https://img.shields.io/badge/License-Unlicense-blue.svg)](https://opensource.org/licenses/Unlicense)
+
 ## Contributing 
 ## Tests 
 ## Questions
+
+
 Interested in seeing my other work? 
  
-Check out my GitHub account: [mewing0328](https://github.com/mewing0328) 
+Check out my GitHub account: [undefined](https://github.com/undefined) 
 
-If you have additional questions, please reach me at [masandraewing@gmail.com ](mailto:masandraewing@gmail.com). 
+If you have additional questions, please reach me at [undefined](mailto:undefined). 
 
 ## Credits
 ## Demos
