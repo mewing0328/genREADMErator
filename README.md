@@ -1,4 +1,4 @@
-# genREADMErator
+# geneREADMErator
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
@@ -38,13 +38,27 @@ The application will be invoked by using the following command:
 ```bash
 node index.js
 ```
-Then answer the questions in the prompt window. An answer is required for all questions.
+Then the user answers the questions in the prompt window. An answer is required for all questions.
 
 ## Demo
+```
+[Link for video](INSERT SCREENCASTIFY HERE!!!!)
+A walkthrough video that demonstrates: 
+- the functionality of the README generator.
+- how a user would invoke the application from the command line.
+- how a user would enter responses to all of the prompts in the application.
+- a generated README that matches the user input and has a functioning table of contents.
+```
+[![Demo Video](C:\Users\mgaya\Desktop\genREADMErator\Develop\assets\geneREADMErator.mp4)]
+<br></br>
 
 ## Contributing 
+For all contributions, please refer to [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) for contributing guidelines.
 
 ## Tests 
+To ensure user's answers are validated, test the function within the validate property in the promptUser object. Specifically, do not input an answer for each prompt to confirm validation works properly. 
+
+For example, when the user does not input a title name (false boolean), then a string will instruct the user to do so. Once an input is added, then the boolean returns as true and the next question is displayed.
 
 ## Questions
 Interested in seeing my other work?
@@ -62,8 +76,10 @@ If you have additional questions, please reach me at [masandraewing@gmail.com](m
 
 *[Open Source Initiative](https://opensource.org/): To obtain license hyperlinks for descriptions.
 
+*[Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+
 ## License 
-genREADMErator project is covered by MIT license. 
+geneREADMErator project is covered by MIT license. 
 
  To view the most current and full license description in opensource.org, click on the license name below.  
 
